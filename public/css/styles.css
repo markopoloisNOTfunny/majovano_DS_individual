@@ -1,8 +1,13 @@
 body {
     background-color: darkgray;
-    color: navy;
+    color: black;
 }
 
-h1 {
-    color:navy;
+h2 {
+    color:crimson;
+}
+
+#nav1 {
+    background-color: black;
+    color:gray;
 }

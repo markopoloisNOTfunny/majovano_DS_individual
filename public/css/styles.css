@@ -1,13 +1,17 @@
+
 body {
-    background-color: darkgray;
-    color: black;
+    background-color:darkgray;
 }
 
 h2 {
     color:crimson;
+    text-align:center;
 }
 
-#nav1 {
-    background-color: black;
-    color:gray;
+p {
+    color:darkred;
+}
+
+#santa {
+    width:50%;
 }

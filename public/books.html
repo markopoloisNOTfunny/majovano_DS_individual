@@ -31,7 +31,7 @@
     <!--Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-    <table class="table table-dark table-striped">
+    <table id="eltable" class="table table-dark table-striped">
         <thead>
           <tr>
             <th scope="col">Title</th>
@@ -133,5 +133,9 @@
         <input type="text" class="form-control" placeholder="$">
       </div>
       <button type="button" class="btn btn-dark">Submit</button>
+      <script src="js/table.js"></script>
+      <script>
+        new Tablesort(document.getElementById('eltable'));
+      </script>
   </body>
 </html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="">
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="user.html">User</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <h2>Welcome to the Book Interface</h2>
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <table id="eltable" class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author(s)</th>
+            <th scope="col">Year Published</th>
+            <th scope="col">Publisher</th>
+            <th scope="col">Page Count</th>
+            <th scope="col">MSRP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lord of the Rings</td>
+            <td>J.R.R. Tolkien</td>
+            <td>1972</td>
+            <td>Penguin</td>
+            <td>1372</td>
+            <td>$30</td>
+          </tr>
+          <tr>
+            <td>The Silmarillion</td>
+            <td>J.R.R. Tolkien</td>
+            <td>1975</td>
+            <td>Penguin</td>
+            <td>2001</td>
+            <td>$27</td>
+          </tr>
+          <tr>
+            <td>The Holy Bible</td>
+            <td>God</td>
+            <td>3 B.C.</td>
+            <td>Bungle Jungle Publishers</td>
+            <td>3000</td>
+            <td>$15</td>
+          </tr>
+          <tr>
+            <td>Huckleberry and Finn</td>
+            <td>Mark Twain</td>
+            <td>1930</td>
+            <td>Wac-a-Mole Publishing</td>
+            <td>574</td>
+            <td>$19</td>
+          </tr>
+          <tr>
+            <td>Tom Sawyer</td>
+            <td>Mark Twain</td>
+            <td>1931</td>
+            <td>Twain Publishing</td>
+            <td>456</td>
+            <td>$17</td>
+          </tr>
+          <tr>
+            <td>The Giver</td>
+            <td>Guy #4</td>
+            <td>1940</td>
+            <td>Twain Publishing</td>
+            <td>250</td>
+            <td>$13</td>
+          </tr>
+          <tr>
+            <td>The Beranstein Bears</td>
+            <td>Guy #5</td>
+            <td>1935</td>
+            <td>Bears Publishing</td>
+            <td>175</td>
+            <td>$8</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Title</span>
+        <input type="text" class="form-control" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2">Author Name</span>
+        <input type="text" class="form-control" placeholder="Author" aria-label="Author" aria-describedby="basic-addon2">
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">Year Published</span>
+        <input type="text" class="form-control" placeholder="Year" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text">Publisher</span>
+        <input type="text" class="form-control" placeholder="Publisher Name">
+      </div>
+      
+      <div class="input-group mb-3">
+          <span class="input-group-text">Page Count</span>
+        <input type="text" class="form-control" placeholder="Page Count" aria-label="Page Count">
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text">MSRP</span>
+        <input type="text" class="form-control" placeholder="$">
+      </div>
+      <button type="button" class="btn btn-dark">Submit</button>
+      <script src="js/table.js"></script>
+      <script>
+        new Tablesort(document.getElementById('eltable'));
+      </script>
+  </body>
+</html>

@@ -1,8 +1,0 @@
-version: "3"
-services:
-  msis-salary:
-    build: .
-    ports:
-      - "8080:80"
-    volumes:
-      - ./public:/var/www/html

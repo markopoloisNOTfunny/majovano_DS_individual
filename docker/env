@@ -1,0 +1,5 @@
+
+MYSQL_DATABASE=markobooks
+MYSQL_HOST=markodb.cdgqebru19hd.us-east-2.rds.amazonaws.com
+MYSQL_USER=msisadmin
+MYSQL_PASSWORD=password
